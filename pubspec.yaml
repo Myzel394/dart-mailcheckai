@@ -1,6 +1,7 @@
 name: mailcheckai
 description: API Wrapper for mailcheck.ai
 version: 1.0.0
+repository: https://github.com/Myzel394/dart-mailcheckai
 
 environment:
   sdk: '>=2.17.5 <3.0.0'
