@@ -28,8 +28,13 @@ class MailCheckManager {
       case 400:
         final data = jsonDecode(response.body);
 
-        throw MailCheckAiError(
+        throw MailCheckAIError(
           message: data['error'],
+        );
+      case 404:
+        throw MailCheckAIError(
+          message:
+              'mailcheck returned 404, did you forget to provide a domain/email?"',
         );
       case 429:
         throw RateLimitError();

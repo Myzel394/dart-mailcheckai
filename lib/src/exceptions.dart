@@ -2,10 +2,10 @@ class RateLimitError implements Exception {
   RateLimitError();
 }
 
-class MailCheckAiError implements Exception {
+class MailCheckAIError implements Exception {
   final String message;
 
-  MailCheckAiError({
+  MailCheckAIError({
     required this.message,
   });
 }
